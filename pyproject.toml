@@ -133,17 +133,6 @@ check_untyped_defs = true
 namespace_packages = true
 explicit_package_bases = true
 
-[tool.ruff]
-line-length = 200
-target-version = "py314"
-
-[tool.ruff.lint]
-ignore = ["N803", "N806", "N811", "N814", "N818", "N999", "E501"]
-
-[tool.pytest.ini_options]
-testpaths = ["tests"]
-addopts = "-p no:cacheprovider"
-
 [tool.hatch.version]
 source = "vcs"
 raw-options = { search_parent_directories = true, fallback_version = "0.0.0" }
